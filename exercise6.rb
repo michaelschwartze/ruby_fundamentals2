@@ -39,6 +39,8 @@ def check_the_list(item_to_find, list_array)
   end
 end
 
+check_the_list("bananas",grocery_list)
+
 # Display second item in the list
 
 puts grocery_list[1]
@@ -50,3 +52,5 @@ grocery_list.sort
 # delete salmon from the list
 
 grocery_list.delete("salmon")
+
+print_list(grocery_list)
