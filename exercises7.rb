@@ -42,6 +42,16 @@ increase_class_size(students, 0.05)
 
 # Delete second cohort and redisplay hash
 
-students[:cohort3] = nil
+students.delete(:cohort2)
 
 print_name_num(students)
+
+# Calc total number of students across all cohorts
+
+sum = 0
+
+students.each do | key, value |
+  sum += value
+end
+
+puts sum.to_s + " total students!"
