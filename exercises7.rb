@@ -10,7 +10,9 @@ students = {
 
 def print_name_num(ary)
   ary.each do |key, value|
-    puts "#{key}: #{value} students"
+    if value != nil
+      puts "#{key}: #{value} students"
+    end
   end
 end
 
@@ -37,3 +39,9 @@ def increase_class_size(myhash, pct)
 end
 
 increase_class_size(students, 0.05)
+
+# Delete second cohort and redisplay hash
+
+students[:cohort3] = nil
+
+print_name_num(students)
