@@ -38,3 +38,15 @@ def check_the_list(item_to_find, list_array)
     return puts "You need to get some #{item_to_find}"
   end
 end
+
+# Display second item in the list
+
+puts grocery_list[1]
+
+# Sort list a to z
+
+grocery_list.sort
+
+# delete salmon from the list
+
+grocery_list.delete("salmon")
