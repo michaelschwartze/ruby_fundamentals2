@@ -27,3 +27,13 @@ print_name_num(students)
 puts students.keys
 
 # Increase cohort size by 5% and display results
+
+def increase_class_size(myhash, pct)
+  myhash.each do |key, value|
+    newtotal = value * (1 + pct)
+    myhash[key] = newtotal.to_i
+  end
+  print_name_num(myhash)
+end
+
+increase_class_size(students, 0.05)
